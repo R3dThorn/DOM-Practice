@@ -46,7 +46,7 @@ button2.addEventListener("click", function(){
         docImg.remove()
     } else if (textValue.value === ".link"){
         docA.remove()
-    } else if(!(textValue.value === ".image") || !(textValue.value === ".link")){
+    } else {
         alert("invalid css selector entered")
     }
 })
