@@ -41,13 +41,12 @@ button.addEventListener("click", function(){
 
 const button2 = document.getElementById('button2')
 button2.addEventListener("click", function(){
-    let textValue = document.getElementById('input')
-    if (textValue.value === ".image"){
-        docImg.remove()
-    } else if (textValue.value === ".link"){
-        docA.remove()
+    let betterVarName = document.getElementById('input')
+    let eraseValue = document.querySelector(betterVarName.value)
+    if(eraseValue){
+        eraseValue.remove()
     } else {
-        alert("invalid css selector entered")
+        alert("invalid input")
     }
 })
 
